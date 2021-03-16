@@ -16,8 +16,8 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-const CONNECTION_URL = 'mongodb://root:4AacDf9Tva@memories-mongo-production/admin?retryWrites=true&w=majority';
-const PORT = process.env.PORT|| 5000;
+const CONNECTION_URL = 'mongodb://hellos:hellos@cluster0-shard-00-00.oz564.mongodb.net:27017,cluster0-shard-00-01.oz564.mongodb.net:27017,cluster0-shard-00-02.oz564.mongodb.net:27017/test?ssl=true&replicaSet=atlas-qwokc7-shard-0&authSource=admin&retryWrites=true&w=majority';
+const PORT = process.env.PORT|| 3000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
