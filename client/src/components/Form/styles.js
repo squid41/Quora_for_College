@@ -20,6 +20,13 @@ export default makeStyles((theme) => ({
     width: '97%',
     margin: '10px 5px',
     
+    
+  },
+  inpu:{
+    width:'50px',
+    height:'48px',
+    objectFit:'cover',
+
   },
   ct:{
     marginRight:50,
@@ -29,4 +36,5 @@ export default makeStyles((theme) => ({
         marginRight:50,
 
   },
+  
 }));

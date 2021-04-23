@@ -2,8 +2,9 @@ import React,{useState,useEffect} from 'react'
 import styled from 'styled-components'
 import { FaBars,FaHome, FaBell, FaHandPointDown,FaPlusCircle} from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import RefractPost from '../RefractPost.js'
 function Sidebar() {
-    
+   
     
     return (
         <Aside>
@@ -12,22 +13,37 @@ function Sidebar() {
                 <div className="major-domains">
                     <div className="hell glow">
                     <h2>Major Domains <FaHandPointDown/></h2>
+                    <hr/>
                     </div>
                     <div>
-                <button type='button' className='btn glow-on-hover '>Web Devlopment</button></div>
-                <div>
-                <button type='button' className='btn glow-on-hover'>App Devlopment</button>
+                <Link to={{pathname:'/RefractPost',search:'Web Devlopment',key:'Web Devlopment'
+                }}>
+                <button type='button' className='btn glow-on-hover '  value="Web Devlopment">Web Devlopment</button></Link>
                 </div>
                 <div>
-                 <button type='button' className='btn glow-on-hover '>Competetive Programming </button>
+                               <Link to={{pathname:'/RefractPost',aboutprops:'App Devlopment' ,search:'App Devlopment'
+                }}>
+                <button type='button' className='btn glow-on-hover'value="App Devlopment" >App Devlopment</button>
+                </Link>
+                </div>
+                <div>
+                        <Link to={{pathname:'/RefractPost',aboutprops:'Compeptetive Proramming'
+                }}>
+                 <button type='button' className='btn glow-on-hover 'value="Competetive Programming ">Competetive Programming </button></Link>
                 </div>
                   <div>
-                <button type='button' className='btn glow-on-hover '>Data Science</button></div>
+                                       <Link to={{pathname:'/RefractPost',aboutprops:'Data Science'
+                }}>
+                <button type='button' className='btn glow-on-hover 'value="Data Science">Data Science</button></Link></div>
                 <div>
-                <button type='button' className='btn glow-on-hover'>Programming Languages</button>
+                                     <Link to={{pathname:'/RefractPost',aboutprops:'Programming Languages'
+                }}>
+                <button type='button' className='btn glow-on-hover'value="Programming Languages">Programming Languages</button></Link>
                 </div>
                 <div>
-                 <button type='button' className='btn glow-on-hover '>Development Tools</button>
+                                    <Link to={{pathname:'/RefractPost',aboutprops:'Devlopment Tools'
+                }}>
+                 <button type='button' className='btn glow-on-hover 'value="Development Tools">Development Tools</button></Link>
                 </div>
                  
                 
@@ -44,11 +60,16 @@ function Sidebar() {
                 <div className="major-domains">
                     <div className="hell glow">
                     <h2>ROADMAPS<FaHandPointDown/></h2>
+                    <hr/>
                     </div>
                     <div>
-                <button type='button' className='btn glow-on-hover '>1st Year</button></div>
+                                         <Link to={{pathname:'/RefractPost',aboutprops:'1st Year'
+                }}>
+                <button type='button' className='btn glow-on-hover 'value="1st Year">1st Year</button></Link></div>
                 <div>
-                <button type='button' className='btn glow-on-hover'>2nd Year</button>
+                                     <Link to={{pathname:'/RefractPost',aboutprops:'2nd Year'
+                }}>
+                <button type='button' className='btn glow-on-hover'value="2nd Year">2nd Year</button></Link>
                 </div>
                  {/* <div className='btn1' >
                   <Link to='/Modall' className="link">
@@ -70,8 +91,8 @@ background:#04213d
 ;
 //margin-top:3rem;
 
-margin-left: 2rem;;
-width:20vw;
+margin-left: -2rem;;
+width:15vw;
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -135,6 +156,7 @@ border-radius:1rem;
 
 .glow-on-hover:active {
     color: #000
+    
 }
 
 .glow-on-hover:active:after {

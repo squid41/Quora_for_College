@@ -40,4 +40,27 @@ export default makeStyles((theme) => ({
     color: theme.palette.getContrastText(deepPurple[500]),
     backgroundColor: deepPurple[500],
   },
+  decor:{
+    borderRadius:' 80%',
+    background:'grey',
+    cursor:'pointer',
+    color:'white',
+    border:'none'
+  },
+  cartvalue:{
+    position: 'relative',
+    cursor:'pointer',
+     top: '-0px',
+     right: '-10px',
+    background:'red',
+    width: '1px',
+    height: '1px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius:' 50%',
+    fontSize: '1rem',
+    color: 'white',
+    padding: '8px',
+  }
 }));

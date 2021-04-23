@@ -6,7 +6,8 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Auth from './components/Auth/Auth';
 import Sidebar from './components/Sidebar/Sidebar';
-
+import DisplayQs from './components/QnA/DisplayQs';
+import RefractPost from './components/RefractPost';
 const App = () => (
   <BrowserRouter>
     <Container maxWidth="lg">
@@ -16,7 +17,10 @@ const App = () => (
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/auth" exact component={Auth} />
+        <Route path="/DisplayQs" exact component={DisplayQs} />
+        <Route path="/RefractPost" exact component={RefractPost} />
       </Switch>
+      
       </div>
     </Container>
   </BrowserRouter>
